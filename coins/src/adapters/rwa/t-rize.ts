@@ -16,6 +16,7 @@ type ChainConfig = {
 
 const configs: Record<string, ChainConfig> = {
   base: {
+    // The oracles follows Chainlink's AggregatorInterfaceV3
     oraclesRegistry: '0x6A96Db69c0FAAe20998247FAE7E79b04BFdc4DB5',
     // TODO: instead of hardcoding the contract addresses, pull the list from the events
     // of the factory contract that deploys them. Like this we won't need a new PR for each
